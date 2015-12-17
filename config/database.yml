@@ -14,11 +14,13 @@
 #
 development:
   adapter:  postgresql
-  host:     localhost
+  host: localhost
   encoding: unicode
   database: CoderStore_development
   pool:     5
-  template: template0
+  username: postgres
+  password: postgres
+  port: 5432
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -45,6 +47,9 @@ test:
   database: CoderStore_test
   pool:     5
   template: template0
+  username: postgres
+  password: postgres
+  port: 5432
 
 production:
   adapter:  postgresql
